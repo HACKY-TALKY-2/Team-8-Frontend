@@ -72,7 +72,7 @@ function DetailPage() {
   const [writingGoodReview, setWritingGoodReview] = useState<string>("");
   const [writingBadReview, setWritingBadReview] = useState<string>("");
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_BASE_URL}lecture/${id}`)
+    fetch(`${import.meta.env.VITE_API_BASE_URL}lecture/detail/${id}`)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
